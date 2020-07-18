@@ -1,6 +1,6 @@
 .hero {
 	position: relative;
-	background: linear-gradient($red,$darkRed);
+	background: linear-gradient($red, $darkRed);
 	background-color: $red;
 	height: 100vh;
 	overflow: hidden;
@@ -9,7 +9,45 @@
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		opacity: 0.5;
+	}
+
+	&__content {
+		padding-top: vw(150);
+		width: 50%;
+	}
+	&__title {
+		font: vw(80) "Londrina", cursive;
+		font-weight: 900;
+		letter-spacing: vw(3);
+		line-height: 1em;
+		color: $yellow;
+		margin-bottom: vw(30);
+		text-shadow: vw(3) vw(3) 0 $black;
+	}
+	&__subtitle {
+		font: vw(32) "Londrina", cursive;
+		font-weight: 900;
+		letter-spacing: vw(1);
+		color: $white;
+		margin-bottom: vw(20);
+		text-transform: uppercase;
+		text-shadow: vw(2) vw(2) 0 $black;
+		-webkit-text-stroke: vw(2) $black;
+	}
+
+	&__description {
+		width: 80%;
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size: vw(20);
+		font-weight: 400;
+		color: $white;
+		strong {
+			display: block;
+			margin-top: vw(10);
+			font-size: vw(22);
+			letter-spacing: vw(1);
+		}
 	}
 }
