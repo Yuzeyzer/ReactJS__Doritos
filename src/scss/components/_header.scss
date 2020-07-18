@@ -1,10 +1,80 @@
 .header {
+	position: absolute;
+	z-index: 1;
+	padding: vw(10) 0;
+	width: 100%;
+	max-height: 100px;
 	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__menu {
 		display: flex;
 	}
 }
 .logo {
 	&__link {
-		max-width: vw(100);
+		img {
+			max-height: vw(128);
+		}
+	}
+}
+
+.menu {
+	&__items {
+		margin-right: vw(48);
+	}
+	&__links {
+		position: relative;
+		font: vw(16) "Lodrina Solid", cursive;
+		font-weight: 900;
+		letter-spacing: vw(1);
+		color: $white;
+		text-transform: capitalize;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: vw(-5);
+			z-index: 2;
+			width: 0%;
+			height: vw(3);
+			background-color: $yellow;
+			transition: 500ms cubic-bezier(0.17, 0.67, 0, 1.01);
+		}
+		&:hover {
+			&::before {
+				width: 80%;
+			}
+		}
+	}
+}
+
+.cart {
+	&__btn {
+		height: vw(60);
+		width: vw(60);
+		padding: vw(10);
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: vw(15);
+	}
+	&__items {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(50%, -50%);
+		background-color: $black;
+		padding: vw(5);
+		color: $white;
+		border-radius: 50%;
+		font-size: vw(14);
+		width: vw(20);
+		height: vw(20);
+		text-align: center;
 	}
 }

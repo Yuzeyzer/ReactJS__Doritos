@@ -13,29 +13,29 @@ function Header() {
               <img src={logo} alt='logo' />
             </a>
           </div>
-          <nav className='header__nav nav'>
-            <ul className='header__menu'>
-              <li>
-                <a href=''>Products</a>
+          <nav className='header__nav'>
+            <ul className='header__menu menu'>
+              <li className="menu__items">
+                <a className="menu__links" href=''>Products</a>
               </li>
-              <li>
-                <a href=''>About</a>
+              <li className="menu__items">
+                <a className="menu__links" href=''>About</a>
               </li>
-              <li>
-                <a href=''>Our Company</a>
+              <li className="menu__items">
+                <a className="menu__links" href=''>Our Company</a>
               </li>
-              <li>
-                <a href=''>Tasty Rewards</a>
+              <li className="menu__items">
+                <a className="menu__links" href=''>Tasty Rewards</a>
               </li>
-              <li>
-                <a href=''>Where to buy</a>
+              <li className="menu__items">
+                <a className="menu__links" href=''>Where to buy</a>
               </li>
             </ul>
           </nav>
           <div className='header__cart cart'>
-            <button>
-              <img src={cart} alt='' />
-              <span>2</span>
+            <button className="cart__btn">
+              <img className="cart__img" src={cart} alt='' />
+              <span className="cart__items">2</span>
             </button>
           </div>
         </div>

@@ -7,7 +7,7 @@ function hero() {
 		<div className="hero">
 			<img className="hero__rings" src={rings} alt="rings"/>
 			<div className="container">
-				test
+				
 			</div>
 		</div>
 	)
