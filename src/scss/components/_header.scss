@@ -60,7 +60,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: vw(15);
+		border-radius: vw(12);
+		transition: 0.3s;
+		&:hover {
+			background-color: $yellow;
+		}
 	}
 	&__items {
 		display: inline-block;
@@ -72,9 +76,14 @@
 		padding: vw(5);
 		color: $white;
 		border-radius: 50%;
+		font-family: 'Mada', sans-serif;
 		font-size: vw(14);
+		font-weight: 500;
 		width: vw(20);
 		height: vw(20);
-		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 0 vw(16) 0 rgba(0,0,0,0.3);
 	}
 }
