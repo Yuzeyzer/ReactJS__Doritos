@@ -20,16 +20,19 @@ function hero() {
               <span className='hide'>Nacho cheese</span>
             </h3>
             <p className='hero__description'>
-              Corn, Vegetable Oil (Corn, Canola, And/or Sunflower Oil), Maltodextrin (Made From
-              Corn), Salt, Cheddar Cheese (Milk, Cheese Cultures, Salt, Enzymes), Whey, Monosodium
-              Glutamate, Buttermilk, Romano Cheese (Part-skim Cow's Milk, Cheese Cultures, Salt,
-              Enzymes), Whey Protein Concentrate, Onion Powder, Corn Flour, Natural And Artificial
-              Flavor, Dextrose, Tomato Powder, Lactose, Spices, Artificial Color (Yellow 6, Yellow
-              5, And Red 40), Lactic Acid, Citric Acid, Sugar, Garlic Powder, Skim Milk, Red And
-              Green Bell Pepper Powder, Disodium Inosinate, And Disodium Guanylate.
-              <strong>CONTAINS MILK INGREDIENTS.</strong>
+         
+              <span className='hide'>
+                Corn, Vegetable Oil (Corn, Canola, And/or Sunflower Oil), Maltodextrin (Made From
+                Corn), Salt, Cheddar Cheese (Milk, Cheese Cultures, Salt, Enzymes), Whey, Monosodium
+                Glutamate, Buttermilk, Romano Cheese (Part-skim Cow's Milk, Cheese Cultures, Salt,
+                Enzymes), Whey Protein Concentrate, Onion Powder, Corn Flour, Natural And Artificial
+                Flavor, Dextrose, Tomato Powder, Lactose, Spices, Artificial Color (Yellow 6, Yellow
+                5, And Red 40), Lactic Acid, Citric Acid, Sugar, Garlic Powder, Skim Milk, Red And
+                Green Bell Pepper Powder, Disodium Inosinate, And Disodium Guanylate.
+                <strong>CONTAINS MILK INGREDIENTS.</strong>
+              </span>
             </p>
-            <h2 className='hero__price'>$3.99</h2>
+            <h2 className='hero__price'><span className="hide">$3.99</span></h2>
             <a className='hero__btn' href='#'>
               Add to cart
             </a>

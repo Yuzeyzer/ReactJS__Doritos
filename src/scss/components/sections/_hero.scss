@@ -40,6 +40,9 @@
 		text-transform: uppercase;
 		text-shadow: vw(2) vw(2) 0 $black;
 		-webkit-text-stroke: vw(2) $black;
+		position: relative;
+		overflow: hidden;
+		max-height: vw(150);
 	}
 	&__description {
 		width: 80%;
@@ -47,6 +50,9 @@
 		font-size: vw(20);
 		font-weight: 400;
 		color: $white;
+		position: relative;
+		overflow: hidden;
+		max-height: vw(200);
 		strong {
 			display: block;
 			margin-top: vw(10);
@@ -62,6 +68,9 @@
 		text-transform: uppercase;
 		text-shadow: vw(2) vw(2) 0 $black;
 		-webkit-text-stroke: vw(2) $black;
+		position: relative;
+		overflow: hidden;
+		max-height: vw(60);
 	}
 	&__btn {
 		position: relative;
