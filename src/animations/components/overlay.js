@@ -7,12 +7,12 @@ function overlay() {
     ease: Expo.easeInOut,
   });
   TweenMax.to('.overlay__second', 1.5, {
-    delay: 0.5,
+    delay: 0.3,
     top: '-100%',
     ease: Expo.easeInOut,
   });
   TweenMax.to('.overlay__third', 1.5, {
-    delay: 1,
+    delay: 0.6,
     top: '-100%',
     ease: Expo.easeInOut,
   });

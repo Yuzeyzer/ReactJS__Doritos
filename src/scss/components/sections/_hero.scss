@@ -27,6 +27,9 @@
 		color: $yellow;
 		margin-bottom: vw(30);
 		text-shadow: vw(3) vw(3) 0 $black;
+		position: relative;
+		overflow: hidden;
+		height: vw(150);
 	}
 	&__subtitle {
 		font: vw(32) "Londrina Solid", cursive;

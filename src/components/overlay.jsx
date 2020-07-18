@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { TweenMax, Expo } from 'gsap';
-
 function overlay() {
   return (
     <div className='overlay'>
