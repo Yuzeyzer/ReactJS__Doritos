@@ -12,9 +12,9 @@ function hero() {
     ease: Expo.easeInOut,
   });
   TweenMax.from('.hero__description .hide', 1.5, {
-    delay: 2.8,
+    delay: 3,
     y: '100%',
-    ease: Expo.easeInOut,
+    ease: Expo.easeOut,
   });
   TweenMax.from('.hero__price .hide', 1.5, {
     delay: 2.9,
@@ -28,7 +28,27 @@ function hero() {
 	});
 	TweenMax.from('.chipses__doritos', 1.5, {
     delay: 2.4,
-    y: '-150%',
+    top: '-150%',
+    ease: Expo.easeInOut,
+	});
+	TweenMax.from('.chipses__chips', 1.5, {
+    delay: 2.3,
+    x: '150%',
+    ease: Expo.easeInOut,
+	});
+	TweenMax.from('.chipses__ketchup', 1.5, {
+    delay: 2.8,
+    y: '150%',
+    ease: Expo.easeInOut,
+	});
+	TweenMax.from('.chipses__suyaPepper', 1.5, {
+    delay: 3,
+    y: '250%',
+    ease: Expo.easeInOut,
+	});
+	TweenMax.from('.chipses__backdrop', 1.5, {
+    delay: 1.9,
+    y: '250%',
     ease: Expo.easeInOut,
 	});
 }

@@ -105,8 +105,8 @@
 		left: 0;
 		max-width: vw(775);
 		z-index: 1;
-		-webkit-animation: 4s float 4s ease-in-out infinite;
-		animation: 4s float 4s ease-in-out infinite;
+		-webkit-animation: float 4s ease-in-out infinite;
+		animation: float 4s ease-in-out infinite;
 	}
 	&__backdrop {
 		position: absolute;
