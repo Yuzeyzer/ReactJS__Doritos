@@ -3,7 +3,7 @@
 	background: linear-gradient($red, $darkRed);
 	background-color: $red;
 	min-height: 100vh;
-
+	overflow: hidden;
 	&__rings {
 		position: absolute;
 		left: 50%;
@@ -82,7 +82,6 @@
 
 .chipses {
 	position: relative;
-
 	&__doritos {
 		position: absolute;
 		top: vw(150);
