@@ -2,8 +2,7 @@
 	position: relative;
 	background: linear-gradient($red, $darkRed);
 	background-color: $red;
-	height: 100vh;
-	overflow: hidden;
+	min-height: 100vh;
 
 	&__rings {
 		position: absolute;
@@ -12,6 +11,9 @@
 		transform: translate(-50%, -50%);
 		opacity: 0.5;
 		z-index: -1;
+	}
+	&__row {
+		display: flex;
 	}
 	&__content {
 		padding-top: vw(150);
