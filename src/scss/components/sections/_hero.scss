@@ -104,7 +104,6 @@
 		position: relative;
 		img {
 			position: absolute;
-			z-index: 2;
 		}
 	}
 	&__chips {
@@ -112,11 +111,18 @@
 		top: vw(-80);
 		height: vw(340);
 		transform: rotate(10deg);
+		z-index: 1;
 	}
 	&__ketchup {
-		left: 0;
+		left: vw(-40);
 		top: vw(550);
-		height: vw(120);
-		transform: rotate(10deg);
+		height: vw(160);
+		z-index: 1;
+	}
+	&__suyaPepper {
+		right: vw(-60);
+		top: vw(500);
+		height: vw(320);
+		z-index: 0;
 	}
 }

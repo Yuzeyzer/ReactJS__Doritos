@@ -35,7 +35,7 @@ function hero() {
 							<div className="chipses__details">
 								<img className="chipses__chips" src={chips} alt="chips"/>
 								<img className="chipses__ketchup" src={ketchup} alt="ketchup"/>
-								{/* <img className="chipses__suyaPepper" src={suyaPepper} alt="suya__pepper"/> */}
+								<img className="chipses__suyaPepper" src={suyaPepper} alt="suya__pepper"/>
 							</div>
             </figure>
           </div>
