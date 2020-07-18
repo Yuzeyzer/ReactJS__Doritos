@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.232782e0.chunk.css",
+    "main.js": "./static/js/main.c250070c.chunk.js",
+    "main.js.map": "./static/js/main.c250070c.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.4f26c735.js",
+    "runtime-main.js.map": "./static/js/runtime-main.4f26c735.js.map",
+    "static/js/2.f2bfc111.chunk.js": "./static/js/2.f2bfc111.chunk.js",
+    "static/js/2.f2bfc111.chunk.js.map": "./static/js/2.f2bfc111.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.0f40e2df0d22212ee72591446619ee18.js": "./precache-manifest.0f40e2df0d22212ee72591446619ee18.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.232782e0.chunk.css.map": "./static/css/main.232782e0.chunk.css.map",
+    "static/js/2.f2bfc111.chunk.js.LICENSE.txt": "./static/js/2.f2bfc111.chunk.js.LICENSE.txt",
+    "static/media/cart.svg": "./static/media/cart.dc0d4b90.svg",
+    "static/media/chips.png": "./static/media/chips.645f564f.png",
+    "static/media/doritos.png": "./static/media/doritos.65bd42f9.png",
+    "static/media/doritos_logo.png": "./static/media/doritos_logo.18b09ee6.png",
+    "static/media/ketchup.png": "./static/media/ketchup.3715f3bc.png",
+    "static/media/rings.png": "./static/media/rings.5da357da.png",
+    "static/media/suyaPepper.png": "./static/media/suyaPepper.07c5bdc5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f26c735.js",
+    "static/js/2.f2bfc111.chunk.js",
+    "static/css/main.232782e0.chunk.css",
+    "static/js/main.c250070c.chunk.js"
+  ]
+}
