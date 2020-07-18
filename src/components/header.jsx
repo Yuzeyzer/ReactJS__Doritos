@@ -8,7 +8,7 @@ function Header() {
       <div className='container'>
         <div className='header__row'>
           <div className='header__logo logo'>
-            <a href='index.html'>
+            <a href='index.html' className="logo__link">
               <img src={logo} alt='logo' />
             </a>
           </div>

@@ -1,4 +1,15 @@
 .header {
 	max-height: 100px;
 	background-color: red;
+	img {
+		max-width: 100%;
+	}
+	a {
+		display: inline-block;
+	}
+}
+.logo {
+	&__link {
+		max-width: vw(100);
+	}
 }
