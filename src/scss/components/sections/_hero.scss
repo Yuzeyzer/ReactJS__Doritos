@@ -80,6 +80,43 @@
 	}
 }
 
-.chips {
+.chipses {
 	position: relative;
+
+	&__doritos {
+		position: absolute;
+		top: vw(150);
+		left: 0;
+		max-width: vw(775);
+		z-index: 1;
+	}
+	&__backdrop {
+		position: absolute;
+		top: vw(400);
+		right: vw(60);
+		width: vw(640);
+		height: vw(775);
+		background-color: $yellow;
+		border-radius: vw(30);
+		transform: skew(-5deg,-5deg);
+	}
+	&__details {
+		position: relative;
+		img {
+			position: absolute;
+			z-index: 2;
+		}
+	}
+	&__chips {
+		right: vw(-50);
+		top: vw(-80);
+		height: vw(340);
+		transform: rotate(10deg);
+	}
+	&__ketchup {
+		left: 0;
+		top: vw(550);
+		height: vw(120);
+		transform: rotate(10deg);
+	}
 }

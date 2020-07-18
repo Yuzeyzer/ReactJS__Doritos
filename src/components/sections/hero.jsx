@@ -30,12 +30,12 @@ function hero() {
           </div>
           <div className='hero__chipses chipses hero__content'>
             <figure>
-              <img src={doritos} alt='doritos' />
+              <img className="chipses__doritos" src={doritos} alt='doritos' />
 							<div className="chipses__backdrop"></div>
 							<div className="chipses__details">
-								<img src={chips} alt="chips"/>
-								<img src={ketchup} alt="ketchup"/>
-								<img src={suyaPepper} alt="suya__pepper"/>
+								<img className="chipses__chips" src={chips} alt="chips"/>
+								<img className="chipses__ketchup" src={ketchup} alt="ketchup"/>
+								{/* <img className="chipses__suyaPepper" src={suyaPepper} alt="suya__pepper"/> */}
 							</div>
             </figure>
           </div>
