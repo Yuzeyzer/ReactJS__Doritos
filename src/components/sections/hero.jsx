@@ -9,7 +9,7 @@ import suyaPepper from '../../assets/suyaPepper.png';
 function hero() {
   return (
     <section className='hero'>
-      <img className='hero__rings' src={rings} alt='rings' />
+      <img className='hero__rings' src={rings} alt='rings'/>
       <div className='container'>
         <div className='hero__row'>
           <div className='hero__content'>
@@ -26,11 +26,9 @@ function hero() {
               <strong>CONTAINS MILK INGREDIENTS.</strong>
             </p>
             <h2 className='hero__price'>$3.99</h2>
-            <a className='hero__btn' href=''>
-              Add to cart
-            </a>
+            <a className='hero__btn' href='#'>Add to cart</a>
           </div>
-          <div className='hero__chipses chipses'>
+          <div className='hero__chipses chipses hero__content'>
             <figure>
               <img src={doritos} alt='doritos' />
 							<div className="chipses__backdrop"></div>
