@@ -74,20 +74,25 @@
 	}
 	&__btn {
 		position: relative;
-		padding: vw(16) vw(48);
-		border: vw(3) solid $yellow;
-		background-color: $yellow;
-		color: $black;
-		box-sizing: border-box;
-		font: vw(20) "Londrina Solid", cursive;
-		font-weight: 500;
-		letter-spacing: vw(1);
-		transition: all 250ms ease-in-out;
-		border-radius: vw(15);
-		&:hover {
-			background-color: $black;
-			color: $yellow;
-			border: vw(3) solid $black;
+		overflow: hidden;
+		max-height: vw(60);
+		span {
+			position: relative;
+			padding: vw(16) vw(48);
+			border: vw(3) solid $yellow;
+			background-color: $yellow;
+			color: $black;
+			box-sizing: border-box;
+			font: vw(20) "Londrina Solid", cursive;
+			font-weight: 500;
+			letter-spacing: vw(1);
+			transition: all 250ms ease-in-out;
+			border-radius: vw(15);
+			&:hover {
+				background-color: $black;
+				color: $yellow;
+				border: vw(3) solid $black;
+			}
 		}
 	}
 }
@@ -100,6 +105,8 @@
 		left: 0;
 		max-width: vw(775);
 		z-index: 1;
+		-webkit-animation: 4s float 4s ease-in-out infinite;
+		animation: 4s float 4s ease-in-out infinite;
 	}
 	&__backdrop {
 		position: absolute;
@@ -109,7 +116,7 @@
 		height: vw(775);
 		background-color: $yellow;
 		border-radius: vw(30);
-		transform: skew(-5deg,-5deg);
+		transform: skew(-5deg, -5deg);
 	}
 	&__details {
 		position: relative;
@@ -135,5 +142,29 @@
 		top: vw(500);
 		height: vw(320);
 		z-index: 0;
+	}
+
+	@-webkit-keyframes float {
+		0% {
+			transform: translateY(0%);
+		}
+		50% {
+			transform: translateY(6%);
+		}
+		100% {
+			transform: translateY(0%);
+		}
+	}
+
+	@keyframes float {
+		0% {
+			transform: translateY(0%);
+		}
+		50% {
+			transform: translateY(6%);
+		}
+		100% {
+			transform: translateY(0%);
+		}
 	}
 }

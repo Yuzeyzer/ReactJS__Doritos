@@ -17,15 +17,20 @@ function hero() {
     ease: Expo.easeInOut,
   });
   TweenMax.from('.hero__price .hide', 1.5, {
-    delay: 3,
+    delay: 2.9,
     y: '100%',
     ease: Expo.easeInOut,
   });
-  TweenMax.from('.hero__btn .hide', 0.5, {
-    delay: 3,
-    y: '100%',
+  TweenMax.from('.hero__btn .hide', 1.5, {
+    delay: 2.4,
+    y: '-100%',
     ease: Expo.easeInOut,
-  });
+	});
+	TweenMax.from('.chipses__doritos', 1.5, {
+    delay: 2.4,
+    y: '-150%',
+    ease: Expo.easeInOut,
+	});
 }
 
 export default hero;

@@ -20,7 +20,6 @@ function hero() {
               <span className='hide'>Nacho cheese</span>
             </h3>
             <p className='hero__description'>
-         
               <span className='hide'>
                 Corn, Vegetable Oil (Corn, Canola, And/or Sunflower Oil), Maltodextrin (Made From
                 Corn), Salt, Cheddar Cheese (Milk, Cheese Cultures, Salt, Enzymes), Whey, Monosodium
@@ -32,9 +31,11 @@ function hero() {
                 <strong>CONTAINS MILK INGREDIENTS.</strong>
               </span>
             </p>
-            <h2 className='hero__price'><span className="hide">$3.99</span></h2>
+            <h2 className='hero__price'>
+              <span className='hide'>$3.99</span>
+            </h2>
             <a className='hero__btn' href='#'>
-              Add to cart
+              <span className='hide'> Add to cart</span>
             </a>
           </div>
           <div className='hero__chipses chipses hero__content'>
