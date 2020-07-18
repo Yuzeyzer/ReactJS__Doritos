@@ -1,11 +1,6 @@
 .header {
-	max-height: 100px;
-	background-color: red;
-	img {
-		max-width: 100%;
-	}
-	a {
-		display: inline-block;
+	&__row {
+		display: flex;
 	}
 }
 .logo {

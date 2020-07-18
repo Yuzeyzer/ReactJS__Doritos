@@ -1,0 +1,15 @@
+.hero {
+	position: relative;
+	background: linear-gradient($red,$darkRed);
+	background-color: $red;
+	height: 100vh;
+	overflow: hidden;
+
+	&__rings {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		opacity: 0.5;
+	}
+}

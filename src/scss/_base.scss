@@ -3,9 +3,19 @@
 	margin: 0 auto;
 }
 a {
+	display: inline-block;
 	text-decoration: none;
 }
 
 li {
 	list-style-type: none;
+}
+img {
+	max-width: 100%;
+}
+button {
+	outline: none;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import cart from '../assets/svg/cart.svg';
 
 import logo from '../assets/doritos_logo.png';
 
@@ -8,7 +9,7 @@ function Header() {
       <div className='container'>
         <div className='header__row'>
           <div className='header__logo logo'>
-            <a href='index.html' className="logo__link">
+            <a href='index.html' className='logo__link'>
               <img src={logo} alt='logo' />
             </a>
           </div>
@@ -33,6 +34,7 @@ function Header() {
           </nav>
           <div className='header__cart cart'>
             <button>
+              <img src={cart} alt='' />
               <span>2</span>
             </button>
           </div>
