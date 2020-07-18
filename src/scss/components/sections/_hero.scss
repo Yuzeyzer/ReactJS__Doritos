@@ -11,14 +11,14 @@
 		top: 50%;
 		transform: translate(-50%, -50%);
 		opacity: 0.5;
+		z-index: -1;
 	}
-
 	&__content {
 		padding-top: vw(150);
 		width: 50%;
 	}
 	&__title {
-		font: vw(80) "Londrina", cursive;
+		font: vw(80) "Londrina Solid", cursive;
 		font-weight: 900;
 		letter-spacing: vw(3);
 		line-height: 1em;
@@ -27,7 +27,7 @@
 		text-shadow: vw(3) vw(3) 0 $black;
 	}
 	&__subtitle {
-		font: vw(32) "Londrina", cursive;
+		font: vw(32) "Londrina Solid", cursive;
 		font-weight: 900;
 		letter-spacing: vw(1);
 		color: $white;
@@ -36,10 +36,9 @@
 		text-shadow: vw(2) vw(2) 0 $black;
 		-webkit-text-stroke: vw(2) $black;
 	}
-
 	&__description {
 		width: 80%;
-		font-family: 'Barlow Condensed', sans-serif;
+		font-family: "Barlow Condensed", sans-serif;
 		font-size: vw(20);
 		font-weight: 400;
 		color: $white;
@@ -48,6 +47,33 @@
 			margin-top: vw(10);
 			font-size: vw(22);
 			letter-spacing: vw(1);
+		}
+	}
+	&__price {
+		font: vw(48) "Londrina Solid", cursive;
+		font-weight: 900;
+		margin: vw(35) 0;
+		color: $white;
+		text-transform: uppercase;
+		text-shadow: vw(2) vw(2) 0 $black;
+		-webkit-text-stroke: vw(2) $black;
+	}
+	&__btn {
+		position: relative;
+		padding: vw(16) vw(48);
+		border: vw(3) solid $yellow;
+		background-color: $yellow;
+		color: $black;
+		box-sizing: border-box;
+		font: vw(20) "Londrina Solid", cursive;
+		font-weight: 500;
+		letter-spacing: vw(1);
+		transition: all 250ms ease-in-out;
+		border-radius: vw(15);
+		&:hover {
+			background-color: $black;
+			color: $yellow;
+			border: vw(3) solid $black;
 		}
 	}
 }
