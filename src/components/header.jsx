@@ -16,19 +16,19 @@ function Header() {
           <nav className='header__nav'>
             <ul className='header__menu menu'>
               <li className="menu__items">
-                <a className="menu__links" href=''>Products</a>
+                <a className="menu__links" href='#products'>Products</a>
               </li>
               <li className="menu__items">
-                <a className="menu__links" href=''>About</a>
+                <a className="menu__links" href='#about'>About</a>
               </li>
               <li className="menu__items">
-                <a className="menu__links" href=''>Our Company</a>
+                <a className="menu__links" href='#company'>Our Company</a>
               </li>
               <li className="menu__items">
-                <a className="menu__links" href=''>Tasty Rewards</a>
+                <a className="menu__links" href='#rewards'>Tasty Rewards</a>
               </li>
               <li className="menu__items">
-                <a className="menu__links" href=''>Where to buy</a>
+                <a className="menu__links" href='#buy'>Where to buy</a>
               </li>
             </ul>
           </nav>

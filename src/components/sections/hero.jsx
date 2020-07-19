@@ -34,7 +34,7 @@ function hero() {
             <h2 className='hero__price'>
               <span className='hide'>$3.99</span>
             </h2>
-            <a className='hero__btn' href='#'>
+            <a className='hero__btn' href='#cart'>
               <span className='hide'> Add to cart</span>
             </a>
           </div>

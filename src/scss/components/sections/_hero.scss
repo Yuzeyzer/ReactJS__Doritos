@@ -151,7 +151,7 @@
 .chipses {
 	position: relative;
 	@include mobile {
-		min-height: vmin(350);
+		min-height: vmin(400);
 	}
 	&__doritos {
 		position: absolute;
@@ -180,7 +180,7 @@
 			top: vmin(200);
 			right: vmin(15);
 			width: vmin(300);
-			height: vmin(300);
+			height: vmin(250);
 		}
 	}
 	&__details {
@@ -195,18 +195,33 @@
 		height: vw(340);
 		transform: rotate(10deg);
 		z-index: 1;
+		@include mobile {
+			right: vmin(-35);
+			top: vmin(40);
+			height: vmin(130);
+		}
 	}
 	&__ketchup {
 		left: vw(-40);
 		top: vw(550);
 		height: vw(160);
 		z-index: 1;
+		@include mobile {
+			left: vmin(-60);
+			top: vmin(330);
+			height: vmin(60);
+		}
 	}
 	&__suyaPepper {
 		right: vw(-60);
 		top: vw(500);
 		height: vw(320);
 		z-index: 0;
+		@include mobile {
+			right: vmin(-60);
+			top: vmin(300);
+			height: vmin(160);
+		}
 	}
 
 	@-webkit-keyframes float {

@@ -38,7 +38,7 @@ function hero() {
 	});
 	TweenMax.from('.chipses__ketchup', 1.5, {
     delay: 2.8,
-    y: '150%',
+    y: '400%',
     ease: Expo.easeInOut,
 	});
 	TweenMax.from('.chipses__suyaPepper', 1.5, {
