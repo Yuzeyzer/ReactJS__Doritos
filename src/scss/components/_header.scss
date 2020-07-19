@@ -3,6 +3,9 @@
 	z-index: 1;
 	padding: vw(10) 0;
 	width: 100%;
+	@include mobile {
+		padding: vmin(5) 0;
+	}
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -10,12 +13,22 @@
 	}
 	&__menu {
 		display: flex;
+		@include mobile {
+			display: none;
+		}
 	}
 }
 .logo {
 	&__link {
+		margin-left: vw(-40);
+		@include mobile {
+			margin-left: vmin(-20);
+		}
 		img {
 			max-height: vw(128);
+			@include mobile {
+				max-height: vmin(64);
+			}
 		}
 	}
 }
@@ -64,6 +77,12 @@
 		&:hover {
 			background-color: $yellow;
 		}
+		@include mobile {
+			height: vmin(30);
+			width: vmin(30);
+			padding: vmin(6);
+			border-radius: vmin(6);
+		}
 	}
 	&__items {
 		display: inline-block;
@@ -75,7 +94,7 @@
 		padding: vw(5);
 		color: $white;
 		border-radius: 50%;
-		font-family: 'Mada', sans-serif;
+		font-family: "Mada", sans-serif;
 		font-size: vw(14);
 		font-weight: 500;
 		width: vw(20);
@@ -83,6 +102,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		box-shadow: 0 0 vw(16) 0 rgba(0,0,0,0.3);
+		box-shadow: 0 0 vw(16) 0 rgba(0, 0, 0, 0.3);
+		@include mobile {
+			font-size: vmin(7);
+			font-weight: 500;
+			width: vmin(10);
+			height: vmin(10);
+			box-shadow: 0 0 vmin(8) 0 rgba(0, 0, 0, 0.3);
+		}
 	}
 }

@@ -4,6 +4,9 @@
 	background-color: $red;
 	min-height: 100vh;
 	overflow: hidden;
+	@include mobile {
+		overflow-y: visible;
+	}
 	&__rings {
 		position: absolute;
 		left: 50%;
@@ -14,10 +17,18 @@
 	}
 	&__row {
 		display: flex;
+		@include mobile {
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+		}
 	}
 	&__content {
 		padding-top: vw(150);
 		width: 50%;
+		@include mobile {
+			padding-top: vmin(50);
+			width: 100%;
+		}
 	}
 	&__title {
 		font: vw(80) "Londrina Solid", cursive;
@@ -30,6 +41,13 @@
 		position: relative;
 		overflow: hidden;
 		height: vw(150);
+		@include mobile {
+			font-size: vmin(40);
+			letter-spacing: vmin(1);
+			height: vmin(81);
+			margin-bottom: vmin(5);
+			text-shadow: vmin(1.5) vmin(1.5) 0 $black;
+		}
 	}
 	&__subtitle {
 		font: vw(32) "Londrina Solid", cursive;
@@ -43,6 +61,14 @@
 		position: relative;
 		overflow: hidden;
 		max-height: vw(150);
+		@include mobile {
+			font-size: vmin(16);
+			letter-spacing: vmin(1);
+			height: vmin(20);
+			margin-top: 0;
+			margin-bottom: 0;
+			text-shadow: vmin(1.5) vmin(1.5) 0 $black;
+		}
 	}
 	&__description {
 		width: 80%;
@@ -58,6 +84,15 @@
 			margin-top: vw(10);
 			font-size: vw(22);
 			letter-spacing: vw(1);
+			@include mobile {
+				margin-top: vmin(5);
+				font-size: vmin(11);
+				letter-spacing: vmin(1);
+			}
+		}
+		@include mobile {
+			font-size: vmin(10);
+			max-height: vmin(200);
 		}
 	}
 	&__price {
@@ -71,6 +106,13 @@
 		position: relative;
 		overflow: hidden;
 		max-height: vw(60);
+		@include mobile {
+			font-size: vmin(24);
+			margin: vmin(5) 0;
+			text-shadow: vmin(1) vmin(1) 0 $black;
+			-webkit-text-stroke: vmin(1) $black;
+			max-height: vmin(30);
+		}
 	}
 	&__btn {
 		position: relative;
@@ -93,12 +135,24 @@
 				color: $yellow;
 				border: vw(3) solid $black;
 			}
+			@include mobile {
+				font-size: vmin(10);
+				letter-spacing: vmin(1);
+				padding: vmin(8) vmin(24);
+				border: vmin(1.5) solid $yellow;
+			}
+		}
+		@include mobile {
+			max-height: vmin(30);
 		}
 	}
 }
 
 .chipses {
 	position: relative;
+	@include mobile {
+		min-height: vmin(350);
+	}
 	&__doritos {
 		position: absolute;
 		top: vw(150);
@@ -107,6 +161,11 @@
 		z-index: 1;
 		-webkit-animation: float 4s ease-in-out infinite;
 		animation: float 4s ease-in-out infinite;
+		@include mobile {
+			top: vmin(50);
+			left: vmin(-50);
+			max-width: vmin(380);
+		}
 	}
 	&__backdrop {
 		position: absolute;
@@ -117,6 +176,12 @@
 		background-color: $yellow;
 		border-radius: vw(30);
 		transform: skew(-5deg, -5deg);
+		@include mobile {
+			top: vmin(200);
+			right: vmin(15);
+			width: vmin(300);
+			height: vmin(300);
+		}
 	}
 	&__details {
 		position: relative;
